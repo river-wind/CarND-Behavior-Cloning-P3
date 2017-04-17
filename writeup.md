@@ -91,9 +91,9 @@ I tried this model against the second track, but the car only made it halfway up
 
 To combat the overfitting, I modified the model to include a dropout layer with 50% retention.  This seemed to help the loss, but the performance of the driving was no better.  I then introduced left/right flipping of each frame, to prevent the model from over-assuming a left-hand bias.  I then spent a good amount of time recording driving laps and corrective clips on the second track, and retrained the model on the combined dataset.  loss on this combined set reduced from 0.2560 to 0.0901 before increasing again, finishing at roughly 0.0930.  Testing this against the simulator resulted in very poor performance on both tracks.
 
-I Then took a step back from the second track and focused on just the first track.  I re-recorded all of the training data so I had a clean set, and retrained the model for 4 epochs (loss seemed to peak at this point during earlier training runs).  Thie test of this training run is the one I have included with the project.
+I then took a step back from the second track and focused on just the first track.  I re-recorded all of the training data so I had a clean set, and retrained the model for 4 epochs (loss seemed to peak at this point during earlier training runs).  Thie test of this training run is the one I have included with the project, though it is not as clean as the original run; I'm not clear what changed between the two to introduce the stop and go behavior, or the increased swerving comparing to the initial runs.
 
-At the end of the process, the vehicle is able to drive autonomously around track 1 without leaving the road.  Working on track took, took more time.
+At the end of the process, the vehicle is able to drive autonomously around track 1 without leaving the road.  Working on track 2 will take more time.
 
 ####2. Final Model Architecture
 
