@@ -90,7 +90,7 @@ validation_generator = generator(validation_lines, batch_size=32)
 #build the model
 model = Sequential()
 #Cropping unwanted parts of the image (sky, hills and car hood).
-model.add(Cropping2D(cropping=((60, 25), (1, 1)), input_shape=(160, 320, 3)))
+model.add(Cropping2D(cropping=((70, 25), (1, 1)), input_shape=(160, 320, 3)))
 
 #Preprocessing the data.
 model.add(Lambda(lambda x: (x / 255.0) - 0.5))#, input_shape=(160, 320, 3), output_shape=(160, 320, 3)))

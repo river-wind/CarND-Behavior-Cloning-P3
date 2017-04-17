@@ -12,7 +12,7 @@ The steps completed for this project are as follows:
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
-* See the first recorded successful lap here: https://www.youtube.com/watch?v=pwmWeQYJzgk
+
 
 
 [//]: # (Image References)
@@ -37,7 +37,9 @@ My project includes the following files:
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results (this file)
+* writeup_report.md summarizing the results (this file)
+* See the first recorded successful lap here: https://www.youtube.com/watch?v=pwmWeQYJzgk
+*     Due to an error received when running video.py, the above youtube recording is in place of video.mp4
 
 #### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
